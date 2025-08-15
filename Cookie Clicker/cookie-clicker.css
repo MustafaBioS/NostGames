@@ -1,0 +1,279 @@
+body {
+    background: url(cartoon-cookie-5khn60nkro66h3sc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; 
+    margin-bottom: 250px
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); 
+    z-index: -1;
+}
+
+@media (min-width: 1093px){
+.sideCon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end; 
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;  
+    
+}
+
+.side {
+    position: absolute;
+    overflow-y: auto;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr;
+    border-left: 1vw solid rgba(255, 166, 0, 0.596);
+    border-radius: 30px;
+}
+
+.shopTitle {
+    font-size: 50px;
+    font-family: "Arial";
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    user-drag: none;
+    -webkit-user-drag: none; 
+    user-select: none;
+    pointer-events: none;
+
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    user-drag: none;
+    -webkit-user-drag: none; 
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'press start 2p';
+    background-image: url(cartoon-blue-stone-wall-vector-14476794.jpg);
+    background-position: fixed;
+    background-size: cover;
+    z-index: 60340;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);    
+    overflow: hidden;
+    outline: none;
+    border: 0px solid transparent;
+    box-shadow: 2px 2px 30px rgba(255,255,255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-6px);
+}
+
+.item::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0, 0.4); 
+    z-index: -1;
+    pointer-events: none;
+}
+
+.cookieCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-drag: none;
+    -webkit-user-drag: none; 
+    
+
+}
+
+.countCon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    user-select: none;
+    margin-bottom: 100px;
+
+}
+
+.btnCon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 300px;
+    z-index: 10;
+    gap: 30px;
+    transform: translateY(450px);
+}
+
+.btn     {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 0px;
+    border-radius: 50px;
+    font-family: 'Arial';
+    background-color: #ff9100;
+    font-size: 20px;
+    color: #030303;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 2px 30px rgba(59, 82, 156, 0.8);
+    background-color: #0156ff;
+    color: #b2cbfc;
+    cursor: pointer;
+}
+
+.counter {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Arial";
+    margin-top: 125px;
+    color: white;
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none; 
+    user-select: none;
+    pointer-events: none;
+}
+
+.cookie {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    user-select: none;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    user-drag: none;
+    -webkit-user-drag: none; 
+    animation: spin 15s linear infinite;
+    position: absolute;
+}
+
+.cookie:hover {
+    transform: translateY(-8px);
+    user-select: none;
+}
+
+
+.plus {
+    font-family: "Arial";
+    font-size: 30px;
+    animation: flyup 1s forwards;
+    pointer-events: none;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1000;
+}
+
+.cookiepop {
+    animation: flyup 1s forwards;
+    pointer-events: none;
+    position: fixed;
+    z-index: 10010;
+    height: 40px;
+    width: 40px;
+}
+
+@keyframes flyup {
+
+    0% {transform: translateY(0); opacity: 1;}
+    100% {transform: translateY(-50px); opacity: 0;}
+
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.pressed {
+    opacity: 40%;
+}
+
+.availableCon {
+    visibility: hidden;
+}
+
+.available {
+    visibility: hidden;
+}
+
+}
+
+@media (max-width: 1093px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .btn {
+        visibility: hidden;
+    }
+
+    .titleCon {
+        visibility: hidden;
+    }
+
+    .hanging {
+        visibility: hidden;
+    }
+
+    .guesses {
+        visibility: hidden;
+    }
+
+    .wordSpotlight {
+        visibility: hidden;
+    }
+
+    .homeCon {
+        visibility: hidden;
+    }
+
+    .cookie {
+        visibility: hidden;
+    }
+
+    .availableCon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .available {
+        font-family: "Arial";
+        font-size: 50px;
+        color: white;
+    }
+
+
+}

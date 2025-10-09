@@ -5,3 +5,7 @@
 > **Minesweeper**<br>
 > **Cookie Clicker**<br>
 > **Hangman**<br>
+---
+**<h1>Self Hosting</h1**
+**Simply Just ```git clone https://github.com/MustafaBioS/NostGames.git```**
+**And Open The HTML File.**
